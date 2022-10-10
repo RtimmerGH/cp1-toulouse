@@ -8,6 +8,7 @@ body {
 }
 
 a {
+  
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -15,8 +16,30 @@ a {
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   margin: 15px 30px;
 }
+
+@media (min-width: 700px){
+  .navbar {
+    display: flex;
+    justify-content:left;
+    margin: 15px 30px;
+  }
+
+
+  .firstBanner{
+    display:block;    
+  }
+  .firstBanner > *{
+    margin-left: 40%;
+    margin-right: auto;
+  }
+
+  
+}
+
+
 
 .logo {
   max-height: 3rem;

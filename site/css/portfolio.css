@@ -26,12 +26,19 @@
 .desktop {
   margin: 80px 0 -5px 0;
 }
+@media (max-width: 700px){
+  .desktop{
+    display:none;
+  }
+}
 
 .skills {
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
 }
+
+
 
 .column {
   border-left: 1px solid #e6ecf8;
@@ -52,6 +59,22 @@
 .column:last-child {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+
+@media (min-width: 700px){
+  .skills{
+    display:flex;
+    justify-content: center;
+    flex-direction:row-reverse;    
+  }
+}
+
+@media (max-width: 700px){
+  .skills{
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content: center;    
+  }  
 }
 
 .column ul {
@@ -79,4 +102,14 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.changeButton ,.toolsButton{
+  border-radius: 5px;
+  background-color: transparent;
+  color:white;
+  padding :5px;
+}
+.toolsButton{
+  background-color: pink;
 }
