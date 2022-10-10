@@ -19,6 +19,15 @@ exemple :
 
 function theaterSieges() {
   // Your code here !
+  let room = [];  
+  for (let i=1;i<27;i++){
+    let siege = [];    
+    for (let j=1;j<101;j++){       
+      siege.push(`${(i).toString()}-${(j).toString()}`);
+    };
+    room.push(siege);
+  }
+  return room;
 }
 
 console.log(theaterSieges());
